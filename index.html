@@ -110,6 +110,37 @@
   margin-right:8px;
   object-fit:contain;
 }
+  		<!--ALINEAR BOTONES-->
+  /* Contenedor para poner botones en línea */
+    .botones-container {
+      display: flex;              /* Pone elementos en línea */
+      gap: 110px;                  /* Separación entre botones (15px) */
+      justify-content: space-between;        /* Alinea verticalmente */
+      text-decoration: none;
+    }
+  
+  
+  			<!--ESTILO BOTONES TIPO ENLACE-->
+   /* Botones de enlace - ANARANJADO y diferente */
+    .btn-link {
+      background: #ff9c14;        /* Anaranjado (diferente del azul) */
+      color: #fff;
+      font-weight: 600;
+      padding: 10px 24px;         /* Tamaño pequeño */
+      font-size: 0.9rem;
+      border-radius: 8px;
+      border: none;
+      text-decoration: none;     /* Sin subrayado */
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(255, 156, 20, 0.4); /* Sombra extra para resaltar */
+      transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn-link:hover {
+      background: #e88d0c;        /* Anaranjado más oscuro */
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(255, 156, 20, 0.5);
+    }
 
 </style>
 </head>
@@ -136,10 +167,16 @@
       <text x='200' y='240' text-anchor='middle' font-family='Arial' font-size='18' fill='%236e6e73'>Equipo de Resonáncia Mgnética</text>
       </svg>
     </div>
-  </div>
+
  <div class="subtitle">Consulta la preparación, indicaciones, procedimiento y precauciones de cada resonancia.Haz el cuestionario universal para saber si estás preparado.
  </div>
-  
+  <div class="subtitle">Aquí también podrá acceder a otras guía pulsando en los siguientes enlaces:</p>
+      				<!--BOTONES DE ENLACES A OTRAS PAGINAS-->
+     <div class="botones-container">
+       <button class="btn-link" onclick="window.location.href='https://nuclear-man.github.io/guia-tac/'">GUIA TAC</button>
+    <button class="btn-link" onclick="window.location.href='https://nuclear-man.github.io/Estudios-Medicina-Nuclear/'">GUIA MEDICINA NUCLEAR</button>
+  </div> 
+ 
 </header>
 
 

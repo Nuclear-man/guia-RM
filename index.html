@@ -163,7 +163,13 @@
   font-size: 0.75rem;
   font-weight: 700;
 }
-
+/* Contenedor para poner botones en línea */
+    .botones-container {
+      display: flex;              /* Pone elementos en línea */
+      gap: 110px;                  /* Separación entre botones (15px) */
+      justify-content: space-between;        /* Alinea verticalmente */
+      text-decoration: none;
+    }
 
 </style>
 </head>
@@ -250,68 +256,79 @@ El cuestionario que le adjuntamos es meramente informativo, con preguntas básic
       					<!--BLOQUE DE BOTONES DE PRUEBAS-->
 <div id="lista" class="grid">
 	<button class="card-btn prueba" data-id="rm-cerebral-enc-falo" onclick="mostrar('rm-cerebral-enc-falo')">
-      <div class="exam-summary-main">
-      <span class="exam-name">Resonancia Cerebral</span>	
+      <div class="botones-container">Resonancia Cerebral	
       <div class="exam-icon" aria-hidden="true">🧠</div>
       </div>
 	</button>
   
-  <button class="card-btn prueba" data-id="rm-de-columna-vertebral-cervical-dorsal-lumbar" onclick="mostrar('rm-de-columna-vertebral-cervical-dorsal-lumbar')">RM de Columna
+  <button class="card-btn prueba" data-id="rm-de-columna-vertebral-cervical-dorsal-lumbar" onclick="mostrar('rm-de-columna-vertebral-cervical-dorsal-lumbar')">
+    <div class="botones-container">RM de Columna
             <div class="exam-icon" aria-hidden="true">🩻</div>
+    </div>
 	</button>
 	
-  <button class="card-btn prueba" data-id="rm-de-rbitas-y-o-do-interno" onclick="mostrar('rm-de-rbitas-y-o-do-interno')">RM de Órbitas / Oído Interno      <div class="exam-icon" aria-hidden="true">👁️</div>
+  <button class="card-btn prueba" data-id="rm-de-rbitas-y-o-do-interno" onclick="mostrar('rm-de-rbitas-y-o-do-interno')">
+    <div class="botones-container">RM de Órbitas / Oído     
+      <div class="exam-icon" aria-hidden="true">👁️</div>
+      </div>
 	</button>
 	
-  <button class="card-btn prueba" data-id="rm-funcional-frm" onclick="mostrar('rm-funcional-frm')">RM Funcional
-	      <div class="exam-icon" aria-hidden="true">🧠</div>
+  <button class="card-btn prueba" data-id="rm-funcional-frm" onclick="mostrar('rm-funcional-frm')">
+    <div class="botones-container">RM Funcional
+	 <div class="exam-icon" aria-hidden="true">🧠</div>
+    </div>
   </button>
-	<button class="card-btn prueba" data-id="rm-card-aca" onclick="mostrar('rm-card-aca')">RM Cardíaca
+	
+  <button class="card-btn prueba" data-id="rm-card-aca" onclick="mostrar('rm-card-aca')">
+    <div class="botones-container">RM Cardíaca
 	<div class="exam-icon" aria-hidden="true">❤️</div>
+      </div>
   </button>
 	
-  <button class="card-btn prueba" data-id="angiorresonancia-arm" onclick="mostrar('angiorresonancia-arm')">	Angiorresonancia 
+  <button class="card-btn prueba" data-id="angiorresonancia-arm" onclick="mostrar('angiorresonancia-arm')">	
+    <div class="botones-container">Angiorresonancia 
       <div class="exam-icon" aria-hidden="true">🩸</div>
+    </div>
 	</button>
 	
-  <button class="card-btn prueba" data-id="rm-articular-y-de-partes-blandas" onclick="mostrar('rm-articular-y-de-partes-blandas')">RM Articular / Partes Blandas
-    <div class="exam-icon" aria-hidden="true">🦵🏼</div>
+  <button class="card-btn prueba" data-id="rm-articular-y-de-partes-blandas" onclick="mostrar('rm-articular-y-de-partes-blandas')"><div class="botones-container">RM Articular / Partes Blandas
+    <div class="exam-icon" aria-hidden="true">🦵🏼</div></div>
 	</button>
 	
-  <button class="card-btn prueba" data-id="rm-de-abdomen-superior-colangio-rm" onclick="mostrar('rm-de-abdomen-superior-colangio-rm')">RM Abdomen Superior / Colangio-RM
-  <div class="exam-icon" aria-hidden="true">🫀</div>
+  <button class="card-btn prueba" data-id="rm-de-abdomen-superior-colangio-rm" onclick="mostrar('rm-de-abdomen-superior-colangio-rm')"><div class="botones-container">RM Abdomen / Colangio-RM
+  <div class="exam-icon" aria-hidden="true">🫀</div></div>
   </button>
 	
-  <button class="card-btn prueba" data-id="enterorresonancia-entero-rm" onclick="mostrar('enterorresonancia-entero-rm')">Enterorresonancia 
-	<div class="exam-icon" aria-hidden="true">🩻</div>
+  <button class="card-btn prueba" data-id="enterorresonancia-entero-rm" onclick="mostrar('enterorresonancia-entero-rm')"><div class="botones-container">Enterorresonancia
+	<div class="exam-icon" aria-hidden="true">🩻</div></div>
   </button>
 	
-  <button class="card-btn prueba" data-id="rm-de-silla-turca-hip-fisis" onclick="mostrar('rm-de-silla-turca-hip-fisis')">RM de Silla Turca
-	<div class="exam-icon" aria-hidden="true">🧠</div>
+  <button class="card-btn prueba" data-id="rm-de-silla-turca-hip-fisis" onclick="mostrar('rm-de-silla-turca-hip-fisis')"><div class="botones-container">RM de Silla Turca
+	<div class="exam-icon" aria-hidden="true">🧠</div></div>
   </button>
 	
-  <button class="card-btn prueba" data-id="rm-de-cuello" onclick="mostrar('rm-de-cuello')">RM de Cuello
-  <div class="exam-icon" aria-hidden="true">👤</div>
+  <button class="card-btn prueba" data-id="rm-de-cuello" onclick="mostrar('rm-de-cuello')"><div class="botones-container">RM de Cuello
+  <div class="exam-icon" aria-hidden="true">👤</div></div>
   </button>
   
-  <button class="card-btn prueba" data-id="urorresonancia-uro-rm" onclick="mostrar('urorresonancia-uro-rm')">Urorresonancia
-	<div class="exam-icon" aria-hidden="true">RF</div>
+  <button class="card-btn prueba" data-id="urorresonancia-uro-rm" onclick="mostrar('urorresonancia-uro-rm')"><div class="botones-container">Urorresonancia
+	<div class="exam-icon" aria-hidden="true">💧</div></div>
   </button>
 
-  <button class="card-btn prueba" data-id="rm-de-pelvis-masculina-pr-stata" onclick="mostrar('rm-de-pelvis-masculina-pr-stata')">RM de Pelvis Masculina
-	<div class="exam-icon" aria-hidden="true">👱🏻‍♂️</div>
+  <button class="card-btn prueba" data-id="rm-de-pelvis-masculina-pr-stata" onclick="mostrar('rm-de-pelvis-masculina-pr-stata')"><div class="botones-container">RM de Pelvis Masculina
+	<div class="exam-icon" aria-hidden="true">👱🏻‍♂️</div></div>
   </button>
 
-  <button class="card-btn prueba" data-id="rm-de-pelvis-femenina" onclick="mostrar('rm-de-pelvis-femenina')">RM de Pelvis Femenina
-	<div class="exam-icon" aria-hidden="true">👩🏻</div>
+  <button class="card-btn prueba" data-id="rm-de-pelvis-femenina" onclick="mostrar('rm-de-pelvis-femenina')"><div class="botones-container">RM de Pelvis Femenina
+	<div class="exam-icon" aria-hidden="true">👩🏻</div></div>
   </button>
 
-  <button class="card-btn prueba" data-id="rm-mamaria" onclick="mostrar('rm-mamaria')">RM mamaria
-	<div class="exam-icon" aria-hidden="true">🎀</div>
+  <button class="card-btn prueba" data-id="rm-mamaria" onclick="mostrar('rm-mamaria')"><div class="botones-container">RM mamaria
+	<div class="exam-icon" aria-hidden="true">🎀</div></div>
   </button>
 
-  <button class="card-btn prueba" data-id="rm-de-recto" onclick="mostrar('rm-de-recto')">RM Recto
-	<div class="exam-icon" aria-hidden="true">🧻</div>
+  <button class="card-btn prueba" data-id="rm-de-recto" onclick="mostrar('rm-de-recto')"><div class="botones-container">RM Recto
+	<div class="exam-icon" aria-hidden="true">🧻</div></div>
   </button>
 
 </div>

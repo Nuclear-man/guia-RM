@@ -723,7 +723,7 @@ La presencia de <strong>marcapasos, implantes, embarazo, insuficiencia renal</st
     </p>
 </div>
 <script>
-function mostrar(id){document.getElementById('lista').classList.add('hidden');document.getElementById('selector-card').classList.add('hidden');document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));const panel=document.getElementById('panel-'+id);if(panel){panel.classList.add('active');window.scrollTo({top:panel.offsetTop-20,behavior:'smooth'});}}
+function mostrar(id){document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));const panel=document.getElementById('panel-'+id);if(panel){panel.classList.add('active');window.scrollTo({top:panel.offsetTop-20,behavior:'smooth'});}}
 function volver(){document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));document.getElementById('lista').classList.remove('hidden');document.getElementById('selector-card').classList.remove('hidden');window.scrollTo({top:document.getElementById('selector-card').offsetTop-20,behavior:'smooth'});}
 function limpiarFiltro(){document.getElementById('buscador').value='';filtrar();}
 function filtrar(){const q=document.getElementById('buscador').value.toLowerCase().trim();document.querySelectorAll('.prueba').forEach(b=>{const ok=b.textContent.toLowerCase().includes(q);b.style.display=ok?'block':'none';});}

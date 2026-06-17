@@ -170,10 +170,35 @@
       justify-content: space-between;        /* Alinea verticalmente */
       text-decoration: none;
     }
+				/*BOTON FLOTANTE SUBIR*/
+.btn-subir {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  background-color: #01696f;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  box-shadow: 0 6px 16px rgba(1, 105, 111, 0.35);
+  z-index: 1000;
+  transition: background-color 0.2s, transform 0.2s;
+}
 
+.btn-subir:hover {
+  background-color: #0c4e54;
+  transform: translateY(-2px);
+}
 </style>
 </head>
-<body>
+	
+<body id="top">
 <a class="sr-only" href="#contenido">Saltar al contenido</a>
 <div class="container">
 <header class="header">
@@ -803,6 +828,7 @@ La presencia de <strong>marcapasos, implantes, embarazo, insuficiencia renal</st
         Todos los derechos reservados | <a href="/aviso-legal" style="color: #bdc3c7;">Aviso Legal</a>
     </p>
 </div>
+</footer>
 <script>
 function mostrar(id){document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));const panel=document.getElementById('panel-'+id);if(panel){panel.classList.add('active');window.scrollTo({top:panel.offsetTop-20,behavior:'smooth'});}}
 function volver(){document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));document.getElementById('lista').classList.remove('hidden');document.getElementById('selector-card').classList.remove('hidden');window.scrollTo({top:document.getElementById('selector-card').offsetTop-20,behavior:'smooth'});}
@@ -849,5 +875,6 @@ document.addEventListener('keydown', e => {
     if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I') || (e.ctrlKey && e.key === 'u')) e.preventDefault();
 });
 </script>
+</main><a href="#top" class="btn-subir" aria-label="Subir al inicio">↑</a>
 </body>
 </html>
